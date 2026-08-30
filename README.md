@@ -21,7 +21,17 @@ systemd-analyze blame
 journalctl -u sshd
 journalctl -b
 journalctl -p err
+
 ```
+### Visual Verification
+![journalctl boot](day1-journalctl-boot.png)
+![journalctl err](day1-journalctl-err.png)
+![journalctl sshd](day1-journalctl-sshd.png)
+![systemctl enable](day1-systemctl-httpd-enable.png)
+![systemctl start](day1-systemctl-httpd-start.png)
+![systemctl status](day1-systemctl-httpd2.png)
+![systemctl targets](day1-systemctl-targets.png)
+![systemd analyze](day1-systemd-analyze.png)
 ## Day 2: LVM Basics & Storage Management
 
 ### Objectives
@@ -49,3 +59,13 @@ lvremove -f /dev/test-vg/test-lv
 vgremove test-vg
 pvremove /dev/nvme0n2
 ```
+### Visual Verification
+![pvcreate](day2-pvcreate.png)
+![vgcreate](day2-vgcreate.png)
+![lvcreate](day2-lvcreate.png)
+![mkfs ext4](day2-mkfs-ext4.png)
+![mount](day2-mount.png)
+![mount2](day2-mount2.png)
+![lvextend](day2-lvextend.png)
+![lvreduce](day2-lvreduce.png)
+![cleanup](day2-cleanup.png)
