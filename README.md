@@ -11,6 +11,10 @@
 ```bash
 # Service Control & Boot Analysis
 systemctl status httpd
+systemctl start httpd
+systemctl enable httpd 
+systemctl is-enabled httpd
+systemctl is-active httpd
 systemd-analyze blame
 
 # Log Filtering (RHCSA Core)
