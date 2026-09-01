@@ -1,8 +1,8 @@
 # RHCSA Preparation Labs (EX200)
 
-## Day 1: systemd Services & journalctl Logging
+## 📦 Day 1: systemd Services & journalctl Logging
 
-### Objectives
+### 📌 Objectives
 - Manage system services using systemctl (start, stop, enable, disable, mask, unmask).
 - Analyze boot time performance using systemd-analyze.
 - Filter and inspect system logs using journalctl.
@@ -32,9 +32,9 @@ journalctl -p err
 ![systemctl status](day1-systemctl-httpd2.png)
 ![systemctl targets](day1-systemctl-targets.png)
 ![systemd analyze](day1-systemd-analyze.png)
-## Day 2: LVM Basics & Storage Management
+## 📦 Day 2: LVM Basics & Storage Management
 
-### Objectives
+### 📌 Objectives
 - Create Physical Volumes (PV), Volume Groups (VG), and Logical Volumes (LV).
 - Format LVs with ext4 and configure persistent mounting via /etc/fstab.
 - Perform Live Expansion (lvextend).
@@ -71,9 +71,9 @@ pvremove /dev/nvme0n2
 ![cleanup](day2-cleanup.png)
 
 
-## Day 3: User & Group Management, Permissions & ACLs
+## 📦 Day 3: User & Group Management, Permissions & ACLs
 
-### Objectives
+### 📌 Objectives
 * Perform local user account creation, group assignment, and password management.
 * Manage group creation, renaming, and deletion.
 * Configure directory ownership, special permissions (SGID), and ACLs.
@@ -127,4 +127,44 @@ getfacl /data/project
 
 * **SGID & ACLs Configuration (chmod 2770, setfacl):**
   ![SGID & ACL Configuration](day3-sgid-acls.png)
-  
+
+# 📦 Day 4: Package Management using DNF
+
+## 🎯 Objectives
+* Master package search and detailed inspection using dnf.
+* Install and verify packages (such as nginx) on RHEL.
+* Identify package providers for specific configuration files using dnf provides.
+* Remove packages safely using the dnf package manager.
+
+---
+
+## 🛠️ Executed Commands & Operations
+
+### 1. Package Search & Inspection
+# Search for nginx package details and configuration provider
+```bash
+dnf search nginx
+dnf info nginx
+dnf provides /etc/nginx/nginx.conf  
+```
+### 2. Package Installation & Verification 
+# Install nginx web server package
+```bash
+sudo dnf install -y nginx
+```
+# Verify installed package
+```bash
+dnf list installed | grep nginx
+```
+### 3. Package Removal
+# Remove package from the system
+```bash
+sudo dnf remove -y nginx
+```
+
+## 📸 Visual Verification
+
+![Package Installation](day4-dnf-install.png)
+![Package Listing & Verification](day4-dnf-list.png)
+![File Provider Tracking](day4-dnf-provides.png)
+![Package Removal](day4-dnf-remove.png)
