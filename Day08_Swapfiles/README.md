@@ -8,15 +8,20 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 swapon --show
 ```
+![Create](./1.png)
+
 ### 2.Persistent (fstab):
 ```Bash
 sudo nano /etc/fstab
 # add the line:
 /swapfile   none   swap   defaults   0   0
 ```
+![fstab](./2.png)
+
 ### 3.Delete Swap File
 ```Bash
 sudo swapoff -v /swapfile
 sudo rm /swapfile
 sudo nano /etc/fstab   # remove the /swapfile line
 ```
+![delete](./3.png)
