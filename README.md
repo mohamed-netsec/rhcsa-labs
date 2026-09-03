@@ -24,14 +24,14 @@ journalctl -p err
 
 ```
 ### Visual Verification
-![journalctl boot](day1-journalctl-boot.png)
-![journalctl err](day1-journalctl-err.png)
-![journalctl sshd](day1-journalctl-sshd.png)
-![systemctl enable](day1-systemctl-httpd-enable.png)
-![systemctl start](day1-systemctl-httpd-start.png)
-![systemctl status](day1-systemctl-httpd2.png)
-![systemctl targets](day1-systemctl-targets.png)
-![systemd analyze](day1-systemd-analyze.png)
+![journalctl boot](./Day01_Systemd_Service-Manager/day1-journalctl-boot.png)
+![journalctl err](./Day01_Systemd_Service-Manager/day1-journalctl-err.png)
+![journalctl sshd](./Day01_Systemd_Service-Manager/day1-journalctl-sshd.png)
+![systemctl enable](./Day01_Systemd_Service-Manager/day1-systemctl-httpd-enable.png)
+![systemctl start](./Day01_Systemd_Service-Manager/day1-systemctl-httpd-start.png)
+![systemctl status](./Day01_Systemd_Service-Manager/day1-systemctl-httpd2.png)
+![systemctl targets](./Day01_Systemd_Service-Manager/day1-systemctl-targets.png)
+![systemd analyze](./Day01_Systemd_Service-Manager/day1-systemd-analyze.png)
 ## 📦 Day 2: LVM Basics & Storage Management
 
 ### 📌 Objectives
@@ -60,15 +60,15 @@ vgremove test-vg
 pvremove /dev/nvme0n2
 ```
 ### Visual Verification
-![pvcreate](day2-pvcreate.png)
-![vgcreate](day2-vgcreate.png)
-![lvcreate](day2-lvcreate.png)
-![mkfs ext4](day2-mkfs-ext4.png)
-![mount](day2-mount.png)
-![mount2](day2-mount2.png)
-![lvextend](day2-lvextend.png)
-![lvreduce](day2-lvreduce.png)
-![cleanup](day2-cleanup.png)
+![pvcreate](./Day02_LVM_Storage/day2-pvcreate.png)
+![vgcreate](./Day02_LVM_Storage/day2-vgcreate.png)
+![lvcreate](./Day02_LVM_Storage/day2-lvcreate.png)
+![mkfs ext4](./Day02_LVM_Storage/day2-mkfs-ext4.png)
+![mount](./Day02_LVM_Storage/day2-mount.png)
+![mount2](./Day02_LVM_Storage/day2-mount2.png)
+![lvextend](./Day02_LVM_Storage/day2-lvextend.png)
+![lvreduce](./Day02_LVM_Storage/day2-lvreduce.png)
+![cleanup](./Day02_LVM_Storage/day2-cleanup.png)
 
 
 ## 📦 Day 3: User & Group Management, Permissions & ACLs
@@ -118,15 +118,15 @@ getfacl /data/project
 ### Visual Verification
 
 * **User Management (useradd, usermod, passwd):**
-  ![User Management](day3-users.png)
-  ![User Management](day3-users2.png)
-  ![User Management](day3-users3.png)
+  ![User Management](./Day03_Users_Groups_ACLs/day3-users.png)
+  ![User Management](./Day03_Users_Groups_ACLs/day3-users2.png)
+  ![User Management](./Day03_Users_Groups_ACLs/day3-users3.png)
 
 * **Group Management (groupadd, groupmod, groupdel):**
-  ![Group Management](day3-groups.png)
+  ![Group Management](./Day03_Users_Groups_ACLs/day3-groups.png)
 
 * **SGID & ACLs Configuration (chmod 2770, setfacl):**
-  ![SGID & ACL Configuration](day3-sgid-acls.png)
+  ![SGID & ACL Configuration](./Day03_Users_Groups_ACLs/day3-sgid-acls.png)
 
 # 📦 Day 4: Package Management using DNF
 
@@ -164,10 +164,10 @@ sudo dnf remove -y nginx
 
 ## 📸 Visual Verification
 
-![Package Installation](day4-dnf-install.png)
-![Package Listing & Verification](day4-dnf-list.png)
-![File Provider Tracking](day4-dnf-provides.png)
-![Package Removal](day4-dnf-remove.png)
+![Package Installation](./Day04_DNF_Package_Manager/day4-dnf-install.png)
+![Package Listing & Verification](./Day04_DNF_Package_Manager/day4-dnf-list.png)
+![File Provider Tracking](./Day04_DNF_Package_Manager/day4-dnf-provides.png)
+![Package Removal](./Day04_DNF_Package_Manager/day4-dnf-remove.png)
 
 ## Day 05: Networking, Time Synchronization & Firewalld Configuration
 
