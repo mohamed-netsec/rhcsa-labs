@@ -32,11 +32,11 @@ sudo firewall-cmd --list-services
 ```
 ### Verification Summary
 ### 1. Hostname Verification Snapshot
-![Hostname Configuration](../hostname.png)
+![Hostname Configuration](./hostname.png)
 
 ### 2. Network & IP Verification Snapshots
-![nmcli Configuration](../nmcli-config.png)
-![IP Address Details](../ip-a.png)
+![nmcli Configuration](./nmcli-config.png)
+![IP Address Details](./ip-a.png)
 
 ### 3. Time Synchronization Snapshots
 ![Timezone and Chrony Status](../timedatectl-chrony.png)
