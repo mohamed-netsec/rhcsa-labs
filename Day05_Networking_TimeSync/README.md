@@ -39,10 +39,10 @@ sudo firewall-cmd --list-services
 ![IP Address Details](./ip-a.png)
 
 ### 3. Time Synchronization Snapshots
-![Timezone and Chrony Status](../timedatectl-chrony.png)
-![Chrony Sources Verification](../chrony.png)
+![Timezone and Chrony Status](./timedatectl-chrony.png)
+![Chrony Sources Verification](./chrony.png)
 
 ### 4. Firewall Verification Snapshot
-![Firewall NTP Service](../firewall-cmd.png)
+![Firewall NTP Service](./firewall-cmd.png)
 
 
