@@ -203,18 +203,18 @@ sudo firewall-cmd --list-services
 ```
 ### Verification Summary
 ### 1. Hostname Verification Snapshot
-![Hostname Configuration](./Day05_Networkin_TimeSync/hostname.png)
+![Hostname Configuration](./Day05_Networking_TimeSync/hostname.png)
 
 ### 2. Network & IP Verification Snapshots
-![nmcli Configuration](./Day05_Networkin_TimeSync/nmcli-config.png)
-![IP Address Details](./Day05_Networkin_TimeSync/ip-a.png)
+![nmcli Configuration](./Day05_Networking_TimeSync/nmcli-config.png)
+![IP Address Details](./Day05_Networking_TimeSync/ip-a.png)
 
 ### 3. Time Synchronization Snapshots
-![Timezone and Chrony Status](./Day05_Networkin_TimeSync/timedatectl-chrony.png)
-![Chrony Sources Verification](./Day05_Networkin_TimeSync/chrony.png)
+![Timezone and Chrony Status](./Day05_Networking_TimeSync/timedatectl-chrony.png)
+![Chrony Sources Verification](./Day05_Networking_TimeSync/chrony.png)
 
 ### 4. Firewall Verification Snapshot
-![Firewall NTP Service](./Day05_Networkin_TimeSync/firewall-cmd.png)
+![Firewall NTP Service](./Day05_Networking_TimeSync/firewall-cmd.png)
 
 
 ### DAY06
