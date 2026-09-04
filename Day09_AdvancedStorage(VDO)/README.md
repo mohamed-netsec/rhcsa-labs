@@ -39,11 +39,15 @@ mkfs.ext4 /dev/vg-vdo/lv-vdo
 mkdir -p /data/vdo-storage
 ```
 
+![Photo](./1.png)
+
 Step 4: Persistent Mounting Configuration
 Configure /etc/fstab for persistent mounting across system reboots:
 
 /dev/vg-vdo/lv-vdo    /data/vdo-storage    ext4    defaults    0 0
 
+
+![fstab](./2.png)
 
 Apply systemd re-configuration and mount the volume:
 ```
@@ -61,3 +65,6 @@ Inspect VDO pool operational statistics and space saving raèèètio:
 ```
 vdostats --human-readable
 ```
+
+![test](./3.png)
+![test2](./4.png)
